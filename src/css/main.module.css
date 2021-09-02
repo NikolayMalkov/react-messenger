@@ -1,0 +1,102 @@
+.wrap {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid gray;
+}
+
+.profileInfo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.avatar img{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.username{
+  display: flex;
+  flex-direction: column;
+}
+.username p{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.options{
+  display: flex;
+  justify-content:flex-end;
+}
+.options img{
+  cursor: pointer;
+}
+
+
+
+/* контейнер */
+
+.container{
+  width: 1440px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.dialog{
+  display: flex;
+  flex-direction: column;
+}
+
+.textareaWrap{
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.textarea textarea{
+  resize: none;
+  width: 100%;
+  height: 90%;
+  border: none;
+  outline: none;
+}
+
+.textareaIcons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textarea img{
+  height: 50px;
+  width: 50px;
+}
+
+
+/* Message */
+
+.userMessage{
+  background: linear-gradient(90.54deg, #60A9F6 0%, #2A8BF2 100%);
+  max-width: 500px;
+  margin: 50px;
+  box-shadow: 10px 10px 25px rgba(42, 139, 242, 0.1), 15px 15px 35px rgba(42, 139, 242, 0.05), 10px 10px 50px rgba(42, 139, 242, 0.1);
+  border-radius: 0px 10px 10px 10px;
+  color: white;
+  padding: 20px;
+}
